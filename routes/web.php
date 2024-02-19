@@ -29,7 +29,7 @@ Route::get('/', function () {
 //////////////////////// HAS ONE/ BELONGS TO- ONE TO ONE RELATIONS ///////////////////
 Route::controller(StudentController::class)->group(function (){
     Route::get('/students', 'index')->name('students');
-    Route::get('/students','create')->name('students.create');
+    Route::get('/students/create','create')->name('students.create');
     Route::post('/students/store','store')->name('students.store');
     Route::get('/students/edit','edit')->name('students.edit');
     Route::put('/students/update','update')->name('students.update');

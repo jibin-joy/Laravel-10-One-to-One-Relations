@@ -20,7 +20,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $student = Student::create([
-            'fullname' => $request->fullname,
+            'firstname' => $request->firstname,
             'phone' => $request->phone,
             'email'=>$request->email,
         ]);
@@ -31,5 +31,7 @@ class StudentController extends Controller
             'course' => $request->course,
             'roll_no' => $request -> roll_no,
         ]);
+
+        return redirect('students')->with('message','Student and Student details are created Successfully');
     }
 }

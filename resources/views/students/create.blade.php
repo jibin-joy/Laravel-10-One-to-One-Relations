@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="card-body">
-                    <form action="{{route(students.store)}}" method="POST">
+                    <form action="{{url('/students/store')}}" method="POST">
                         @csrf
                         @method('POST')
                         <h4>Students</h4>
