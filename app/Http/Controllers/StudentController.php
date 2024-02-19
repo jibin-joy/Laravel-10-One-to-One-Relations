@@ -26,7 +26,10 @@ class StudentController extends Controller
         ]);
 
         $student->studentDetail()->create([
-            'alter_no' => $request->
-        ])
+            'alter_no' => $request->alter_no,
+            'address' => $request->address,
+            'course' => $request->course,
+            'roll_no' => $request -> roll_no,
+        ]);
     }
 }
